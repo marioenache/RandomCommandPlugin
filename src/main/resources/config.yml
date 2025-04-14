@@ -1,0 +1,24 @@
+# Configuration for RandomCommandPlugin
+
+# Settings
+settings:
+  # Minimum number of commands to execute (set to 1 to always execute only one)
+  min-commands: 1
+  # Maximum number of commands to execute
+  max-commands: 3
+  # Set to true to prevent duplicates when executing multiple commands
+  prevent-duplicates: true
+  # Shows command identifier when executing multiple commands
+  show-command-identifiers: true
+
+# List of commands to randomly choose from
+# Use {player} as a placeholder for the player name
+commands:
+  first:
+    - "give {player} minecraft:diamond 5"
+    - "effect give {player} minecraft:speed 30 2"
+    - "tp {player} ~ ~5 ~"
+  second:
+    - "xp add {player} 100"
+    - "say {player} is awesome!"
+    - "summon minecraft:chicken ~ ~ ~ {CustomName:\"{\\\"text\\\":\\\"{player}'s chicken\\\"}\",CustomNameVisible:1}"

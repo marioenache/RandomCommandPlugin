@@ -1,0 +1,21 @@
+name: RandomCommandPlugin
+version: 1.0
+main: ro.marioenache.randomcommand.RandomCommandPlugin
+api-version: 1.20
+author: Mario Enache
+commands:
+  randomcommand:
+    description: Execute random commands from config
+    usage: /randomcommand <player_name>
+    permission: randomcommand.use
+  randomcommandreload:
+    description: Reload the plugin configuration
+    usage: /randomcommandreload
+    permission: randomcommand.reload
+permissions:
+  randomcommand.use:
+    description: Allows using the randomcommand command
+    default: op
+  randomcommand.reload:
+    description: Allows reloading the plugin configuration
+    default: op
