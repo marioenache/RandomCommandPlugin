@@ -6,7 +6,7 @@ author: Mario Enache
 commands:
   randomcommand:
     description: Execute random commands from config
-    usage: /randomcommand <player_name>
+    usage: /randomcommand <player_name> or /randomcommand <category> <player_name>
     permission: randomcommand.use
   randomcommandreload:
     description: Reload the plugin configuration
